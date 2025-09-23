@@ -1,4 +1,5 @@
 function shuffle() {
+  $("#message").html("");
   $(".tile").off();
   let board = $("#gameboard");
   let tiles = board.children();
@@ -90,7 +91,6 @@ function clicTile() {
 
   if (isSolved()) {
     $("#message").html("Vous avez gagné");
-    $("#message").css("color", "green");
     $(".tile").off();
   }
 }
