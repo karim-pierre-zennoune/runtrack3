@@ -11,21 +11,17 @@
   border-radius: 5px;
   flex: row;
   background-color: #bfbfbf;
-  /* width: 15em; */
   width: 18%;
   min-width: 250px;
 }
 
 .card-left {
   border: 1px solid;
-  /* background-color: cadetblue; */
-  /* background-color: #bfbfbf; */
   width: 50%;
 }
 
 .card-right {
   border: 1px solid;
-  /* background-color: yellow; */
   width: 50%;
 }
 
@@ -41,16 +37,10 @@
 
 .subtext {
   font-size: 0.9em;
-  /* text-align: center; */
 }
 
 tr {
   text-align: center;
-  /* width: 40%; */
-}
-
-td {
-  /* width: 40%; */
 }
 
 col {
@@ -60,20 +50,12 @@ col {
 table {
   border-collapse: separate;
   border-spacing: 0.5em 0.5em;
-
-  /* margin: 0; */
 }
-
-/* .types {
-  border-spacing: 0;
-  background-color: black;
-} */
 
 .types {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  /* align-items: center; */
 }
 
 .types div {

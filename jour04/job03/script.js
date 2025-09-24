@@ -16,12 +16,9 @@ window.onload = function () {
   const cardWrapper = document.getElementById("card-wrapper");
   const pokeTemplate = document.getElementById("poketemplate");
 
-  console.log("a");
   document.getElementById("filter").addEventListener("click", handleForm);
-  console.log("b");
 
   function buildAndAppendPkmnNode(pkmn) {
-    // let pokeTemplate = document.getElementById("poketemplate");
     let card = pokeTemplate.content.cloneNode(true);
     card.getElementById("pkmn-data-id").innerText = pkmn["id"];
     card.getElementById("pkmn-data-name-en").innerText =
