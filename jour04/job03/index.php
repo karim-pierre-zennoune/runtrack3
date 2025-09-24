@@ -41,7 +41,7 @@
         </select>
 
         <label for="filter" hidden>Filter</label>
-        <button id="filter" type="button" onclick="handleForm()">Filtrer</button>
+        <button id="filter" type="button">Filtrer</button>
 
 
 
@@ -49,56 +49,11 @@
 
 
 
-    <div class="card-wrapper"></div>
+    <div id="card-wrapper"></div>
 
 
-    <div class="pkmn-card">
-        <div class="card-left">
-            <p>id: 1</p>
-            <p>english</p>
-            <p>japanese</p>
-            <p>chinese</p>
-            <p>french</p>
-
-        </div>
-        <div class="card-right">
-
-            <table>
-                <tr>
-                    <th>HP</th>
-                    <td>50</td>
-                </tr>
-                <tr>
-                    <th>Atk</th>
-                    <td>135</td>
-                </tr>
-                <tr>
-                    <th>Def</th>
-                    <td>60</td>
-                </tr>
-                <tr>
-                    <th>Sp.Atk</th>
-                    <td>130</td>
-                </tr>
-                <tr>
-                    <th>Sp.Def</th>
-                    <td>40</td>
-                </tr>
-                <tr>
-                    <th>Speed</th>
-                    <td>70</td>
-                </tr>
-
-                <tr>
-                    <td>Type1</td>
-                    <td>Type2</td>
-                </tr>
-            </table>
 
 
-        </div>
-
-    </div>
 
 
 
@@ -110,30 +65,57 @@
 
 
 
-<template id="pkmn">
+<template id="poketemplate">
+
 
     <div class="pkmn-card">
         <div class="card-left">
-            <p>id: 1</p>
-            <p>english</p>
-            <p>japanese</p>
-            <p>chinese</p>
-            <p>french</p>
-            <table>
-                <tr>
-                    <td>Fire</td>
-                    <td>Flying</td>
-                </tr>
-            </table>
+            <p class="text maintext">id:<span id="pkmn-data-id"> </span></p>
+            <p class="text subtext">english</p>
+            <p class="text maintext" id="pkmn-data-name-en"></p>
+            <p class="text subtext">japanese</p>
+            <p class="text maintext" id="pkmn-data-name-jp"></p>
+            <p class="text subtext">chinese</p>
+            <p class="text maintext" id="pkmn-data-name-cn"></p>
+            <p class="text subtext">french</p>
+            <p class="text maintext" id="pkmn-data-name-fr"></p>
         </div>
         <div class="card-right">
-            <p>"HP": 45,</p>
-            <p>"Attack": 49,</p>
-            <p>"Defense": 49,</p>
-            <p>"Sp. Attack": 65,</p>
-            <p>"Sp. Defense": 65,</p>
-            <p>"Speed": 45</p>
+            <table>
+                <col />
+                <col />
+                <tr>
+                    <th>HP</th>
+                    <td id="pkmn-data-hp"></td>
+                </tr>
+                <tr>
+                    <th>Atk</th>
+                    <td id="pkmn-data-atk"></td>
+                </tr>
+                <tr>
+                    <th>Def</th>
+                    <td id="pkmn-data-def"></td>
+                </tr>
+                <tr>
+                    <th>Sp.Atk</th>
+                    <td id="pkmn-data-spatk"></td>
+                </tr>
+                <tr>
+                    <th>Sp.Def</th>
+                    <td id="pkmn-data-spdef"></td>
+                </tr>
+                <tr>
+                    <th>Speed</th>
+                    <td id="pkmn-data-speed"></td>
+                </tr>
+            </table>
+            <div class="types">
+                <div id="pkmn-data-type1"></div>
+                <div id="pkmn-data-type2"></div>
+            </div>
         </div>
-
     </div>
+
+
+
 </template>
