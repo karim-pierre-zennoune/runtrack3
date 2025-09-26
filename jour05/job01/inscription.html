@@ -1,0 +1,74 @@
+<!-- Le formulaire de la page inscription être composé au minimum des champs
+suivants :
+➔ Nom
+➔ Prénom
+➔ Email
+➔ Mot de passe
+
+_1
+
+➔ Adresse
+➔ Code postal
+
+
+Faite de la veille sur les différentes sécurités à mettre sur un formulaire coté
+front.
+Chaque champ doit être vérifié de façon asynchrone.
+
+Un message lié à chaque erreur doit être affiché en dessous de chaque
+champ du formulaire le cas échéant.
+
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript</title>
+    <script src="validators.js"></script>
+    <script src="script-inscription.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form action="" id="form">
+      <label for="nom">Nom:</label>
+      <input type="text" name="nom" id="nom" />
+      <p class="errors-msg" id="errors-nom"></p>
+
+      <label for="prenom">Prenom:</label>
+      <input type="text" name="prenom" id="prenom" />
+      <p class="errors-msg" id="errors-prenom"></p>
+
+      <label for="email">Email:</label>
+      <input type="text" name="email" id="email" />
+      <p class="errors-msg" id="errors-email"></p>
+
+      <label for="password">Password</label>
+      <input type="text" name="password" id="password" />
+      <p class="errors-msg" id="errors-password"></p>
+
+      <label for="address">Adresse</label>
+      <input type="text" name="address" id="address" />
+      <p class="errors-msg" id="errors-address"></p>
+
+      <label for="zipcode">Code Postal</label>
+      <input type="text" name="zipcode" id="zipcode" />
+      <p class="errors-msg" id="errors-zipcode"></p>
+
+      <input type="submit" name="register" />
+    </form>
+  </body>
+</html>
+
+<div>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+    </head>
+    <body></body>
+  </html>
+</div>

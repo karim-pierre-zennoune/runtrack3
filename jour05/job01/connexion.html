@@ -1,0 +1,27 @@
+<!-- Le formulaire de la page de connexion doit contenir les champs suivants :
+➔ Email
+➔ Mot de passe -->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Javascript</title>
+    <script src="validators.js"></script>
+    <script src="script-connexion.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <form action="" id="form">
+      <label for="email">email: </label>
+      <input type="text" id="email" name="email" />
+      <p id="errors-email"></p>
+
+      <label for="password">password: </label>
+      <input type="text" id="password" name="password" />
+      <p id="errors-password"></p>
+      <input type="submit" name="login" />
+    </form>
+  </body>
+</html>
