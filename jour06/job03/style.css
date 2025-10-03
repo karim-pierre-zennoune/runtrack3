@@ -1,0 +1,70 @@
+/* Background colors */
+
+#elem1 {
+  background-color: #96d7e6;
+}
+
+#elem2,
+#elem3,
+#elem4 {
+  background-color: #9bb4eb;
+}
+
+#elem5,
+#elem6 {
+  background-color: #c896e6;
+}
+
+#elem7,
+#elem8,
+#elem9 {
+  background-color: #e5a490;
+}
+
+/* element height on mobile */
+
+#elem1,
+#elem2 {
+  height: 10vh;
+}
+
+#elem3,
+#elem4 {
+  height: 25vh;
+}
+
+#elem5,
+#elem6 {
+  height: 5vh;
+}
+
+#elem7,
+#elem8,
+#elem9 {
+  height: 18vh;
+}
+
+/* element height on desktop */
+
+@media (min-width: 768px) {
+  #elem1,
+  #elem2,
+  #elem3,
+  #elem4 {
+    height: 30vh;
+  }
+  #elem5,
+  #elem6 {
+    height: 20vh;
+  }
+
+  #elem7,
+  #elem8,
+  #elem9 {
+    height: 5vh;
+  }
+
+  #row789 {
+    height: 15vh;
+  }
+}
