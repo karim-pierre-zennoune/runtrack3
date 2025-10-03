@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- 
+Créez un fichier index.html contenant les balises HTML de base (doctype,
+html, head, body). Dans votre body, créez un header avec une nav et un
+footer contenant une liste de quatre liens (Accueil, Inscription, Connexion et
+Rechercher). Ils doivent tous pointer vers votre page index.html.
+
+Ajoutez une section avec un formulaire de création de compte contenant :
+
+_1
+
+● Des inputs radios pour la civilité
+● Des inputs de type text pour prénom, nom et adresse
+● Des inputs de type email pour l’adresse email
+● Des inputs de type password pour le mot de passe et sa validation
+● Des checkbox pour choisir ses passions (informatique, voyages, sport,
+lecture)
+● Un bouton pour valider le formulaire -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./index.html">Inscription`</a></li>
+          <li><a href="./index.html">Connexion</a></li>
+          <li><a href="./index.html">Rechercher</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <form action="">
+        <div>
+          <input type="radio" id="Mr" name="title" value="Mr" />
+          <label for="Mr">Mr</label>
+
+          <input type="radio" id="Mme" name="title" value="Mme" />
+          <label for="Mme">Mme</label>
+
+          <input type="radio" id="Mlle" name="title" value="Mlle" />
+          <label for="Mlle">Mlle</label>
+
+          <input type="radio" id="Mx" name="title" value="Mx" />
+          <label for="Mx">Mx</label>
+        </div>
+
+        <div>
+          <label for="name">Nom</label
+          ><input id="name" name="name" type="text" />
+
+          <label for="surname">Prenom</label>
+          <input id="surname" name="surname" type="text" />
+
+          <label for="address">Addresse</label
+          ><input id="address" name="address" type="text" />
+        </div>
+
+        <div>
+          <label for="email">Email</label
+          ><input id="email" name="email" type="email" />
+        </div>
+
+        <div>
+          <label for="password">Mot de Passe</label
+          ><input id="password" name="password" type="password" /><label
+            for="confirm-password"
+            >Confirmer le Mot de Passe</label
+          ><input
+            id="confirm-password"
+            name="confirm-password"
+            type="password"
+          />
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            id="informatique"
+            name="hobby"
+            value="informatique"
+          />
+          <label for="informatique">Informatique</label>
+
+          <input type="checkbox" id="sport" name="hobby" value="sport" />
+          <label for="sport">Sport</label>
+
+          <input type="checkbox" id="voyages" name="hobby" value="voyages" />
+          <label for="voyages">Voyages</label>
+
+          <input type="checkbox" id="lecture" name="hobby" value="lecture" />
+          <label for="lecture">Lecture</label>
+        </div>
+
+        <input type="submit" />
+      </form>
+    </section>
+
+    <footer>
+      <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./index.html">Inscription`</a></li>
+        <li><a href="./index.html">Connexion</a></li>
+        <li><a href="./index.html">Rechercher</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

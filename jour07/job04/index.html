@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+
+<!-- 
+Reprenez votre fichier index.html. Toujours sans utiliser de fichier CSS, ajouter
+des classes materialize à votre formulaire afin que son design soit moderne.
+Ajoutez également des icônes à chacun de vos inputs. -->
+
+<html lang="en">
+  <head>
+    <title>Materialize</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Materialize</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="./index.html">Accueil</a></li>
+            <li><a href="./index.html">Inscription</a></li>
+            <li><a href="./index.html">Connexion</a></li>
+            <li><a href="./index.html">Rechercher</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section class="container">
+      <div class="row">
+        <form class="col s12" action="">
+          <div class="row">
+            <div class="input-field col s12">
+              <p class="col s2">
+                <label for="mr">
+                  <input id="mr" type="radio" name="title" value="mr" />
+                  <span>Mr</span></label
+                >
+              </p>
+              <p class="col s2">
+                <label for="mme">
+                  <input
+                    id="mme"
+                    type="radio"
+                    name="title"
+                    value="mme"
+                    checked
+                  />
+
+                  <span>Mme</span></label
+                >
+              </p>
+
+              <p class="col s2">
+                <label for="mlle">
+                  <input
+                    id="mlle"
+                    type="radio"
+                    name="title"
+                    value="mlle"
+                    checked
+                  />
+
+                  <span>Mlle</span></label
+                >
+              </p>
+
+              <p class="col s2">
+                <label for="mx">
+                  <input
+                    id="mx"
+                    class="with-gap"
+                    type="radio"
+                    name="title"
+                    value="mx"
+                    checked
+                  />
+
+                  <span>Mx</span></label
+                >
+              </p>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <label for="name">Nom</label
+            ><input id="name" name="name" type="text" />
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">account_circle</i>
+            <label for="surname">Prenom</label>
+            <input id="surname" name="surname" type="text" />
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">home</i>
+            <label for="address">Addresse</label
+            ><input id="address" name="address" type="text" />
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix"> alternate_email </i>
+            <label for="email">Email</label
+            ><input id="email" name="email" type="email" />
+          </div>
+
+          <div class="input-field col s12">
+            <i class="material-icons prefix">key</i>
+            <label for="password">Mot de Passe</label
+            ><input id="password" name="password" type="password" />
+          </div>
+          <div class="input-field col s12">
+            <i class="material-icons prefix">key</i>
+            <label for="confirm-password">Confirmer le Mot de Passe</label>
+
+            <input
+              id="confirm-password"
+              name="confirm-password"
+              type="password"
+            />
+          </div>
+
+          <div class="input-field col s12">
+            <div class="col s1"></div>
+            <div class="col s2">
+              <label for="informatique">
+                <input
+                  type="checkbox"
+                  id="informatique"
+                  name="hobby"
+                  value="informatique"
+                />
+                <span>Informatique</span></label
+              >
+            </div>
+
+            <div class="col s2">
+              <label for="sport">
+                <input type="checkbox" id="sport" name="hobby" value="sport" />
+                <span>Sport</span></label
+              >
+            </div>
+            <div class="col s2">
+              <label for="voyages">
+                <input
+                  type="checkbox"
+                  id="voyages"
+                  name="hobby"
+                  value="voyages"
+                />
+                <span>Voyages</span></label
+              >
+            </div>
+
+            <div class="col s2">
+              <label for="lecture">
+                <input
+                  type="checkbox"
+                  id="lecture"
+                  name="hobby"
+                  value="lecture"
+                />
+                <span>Lecture</span></label
+              >
+            </div>
+          </div>
+
+          <input type="submit" />
+        </form>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12"></div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="./index.html"
+                  >Accueil</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="./index.html"
+                  >Inscription</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="./index.html"
+                  >Connexion</a
+                >
+              </li>
+              <li>
+                <a class="grey-text text-lighten-3" href="./index.html"
+                  >Rechercher</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
